@@ -1,6 +1,5 @@
 public interface IInformacion {
 
-    public int verCantidad ();//
-
-    public String listarContenido();
+    abstract int verCantidad();
+    abstract String listarContenidos();
 }
