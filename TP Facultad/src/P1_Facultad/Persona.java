@@ -18,9 +18,19 @@ abstract class Persona {
         return legajo;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    //15. Todas las clases deben tener los métodos toString() para ver todos los datos de la clase
+    // y los métodos geters y seter por cada una de sus atributos.
     @Override
     public String toString(){
-        return "Nombre: "+nombre+"\nApellido: "+apellido+"\nLegajo: "+legajo;
+        return "Nombre: "+nombre+"\nApellido: "+apellido+"\nLegajo: "+legajo+ "\n";
     }
 
     public abstract void modificarDatos(String nombre, String apellido, String legajo);
